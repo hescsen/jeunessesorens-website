@@ -157,4 +157,40 @@ a {
   height: auto;
 }
 
+/* INFORMATIONS */
+#informations {
+  background-color: #f1f1f1;
+}
+#informations p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+#informations .content {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+@media only screen and (max-width: 850px) {
+  #informations .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#informations .info {
+  margin: 150px 0;
+}
+@media only screen and (max-width: 850px) {
+  #informations .info {
+    margin: 150px 0;
+  }
+}
+#informations a {
+  color: #000;
+}
+#informations a:hover {
+  color: orange;
+}
+
 /*# sourceMappingURL=style.css.map */
