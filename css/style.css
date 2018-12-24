@@ -1,3 +1,7 @@
+::selection {
+  background: orange;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +15,15 @@ a {
   width: 1200px;
   margin: auto;
 }
+@media only screen and (max-width: 1250px) {
+  .content {
+    margin: 0 40px;
+    width: auto;
+  }
+}
 
 /* NAVBAR */
-nav {
+.nav {
   height: 80px;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -22,12 +32,35 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav ul {
+.nav ul {
   display: flex;
 }
-nav ul li {
+@media only screen and (max-width: 850px) {
+  .nav ul {
+    display: none;
+  }
+}
+.nav ul li {
   margin: 0 20px;
   list-style-type: none;
+}
+
+.nav-icon {
+  display: none;
+}
+@media only screen and (max-width: 850px) {
+  .nav-icon {
+    display: initial;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* HOME */
@@ -74,8 +107,7 @@ nav ul li {
   border: 1px solid white;
 }
 .home-text a:hover {
-  color: #fff !important;
-  background-color: orange;
+  border-color: orange;
 }
 
 .home-footer {
@@ -91,10 +123,10 @@ nav ul li {
 .home-footer .home-social-network a:first-child {
   margin-right: 30px;
 }
-.home-footer .home-localisation {
+.home-footer .home-adress {
   display: flex;
 }
-.home-footer .home-localisation i {
+.home-footer .home-adress i {
   color: orange;
   margin-right: 10px;
 }

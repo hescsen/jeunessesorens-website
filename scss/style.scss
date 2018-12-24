@@ -1,5 +1,10 @@
 $primary-color : orange;
 
+::selection
+{
+    background: $primary-color;
+}
+
 *
 {
     margin: 0;
@@ -15,10 +20,16 @@ a
 {
     width: 1200px;
     margin: auto;
+
+    @media only screen and (max-width: 1250px)
+    {
+        margin: 0 40px;
+        width: auto;
+    }
 }
 
 /* NAVBAR */
-nav
+.nav
 {
     height: 80px;
 
@@ -33,12 +44,37 @@ nav
     ul
     {
         display: flex;
+
+        @media only screen and (max-width: 850px)
+        {
+            display: none;
+        }
         
         li
         {
             margin: 0 20px;
             list-style-type: none;
         }
+    }
+}
+
+.nav-icon
+{
+    display: none;
+
+    @media only screen and (max-width: 850px)
+    {
+        display: initial;
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -107,8 +143,7 @@ nav
 
         &:hover
         {
-            color: #fff !important;
-            background-color: $primary-color;
+            border-color: $primary-color;
         }
     }
 }
@@ -132,7 +167,7 @@ nav
         }
     }
 
-    .home-localisation
+    .home-adress
     {
         display: flex;
 
