@@ -193,4 +193,46 @@ a {
   color: orange;
 }
 
+/* FOOTER */
+footer {
+  padding: 50px 0;
+  background-color: #151515;
+  color: #777;
+}
+footer a {
+  color: #777;
+}
+footer a:hover {
+  color: orange;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-content h2 {
+  font-size: 1rem;
+  color: orange;
+  margin-bottom: 30px;
+}
+footer .footer-content i {
+  margin-right: 10px;
+}
+footer .footer-content .footer-item {
+  margin: 20px 0;
+}
+footer .footer-copyright {
+  text-align: center;
+  margin-top: 50px;
+}
+footer .footer-copyright p {
+  margin-bottom: 5px;
+}
+footer .footer-copyright a {
+  color: #fff;
+}
+footer .footer-copyright a:hover {
+  color: orange;
+}
+
 /*# sourceMappingURL=style.css.map */
