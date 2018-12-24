@@ -1,0 +1,145 @@
+$primary-color : orange;
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.content
+{
+    width: 1200px;
+    margin: auto;
+}
+
+/* NAVBAR */
+nav
+{
+    height: 80px;
+
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    ul
+    {
+        display: flex;
+        
+        li
+        {
+            margin: 0 20px;
+            list-style-type: none;
+        }
+    }
+}
+
+
+/* HOME */
+
+#home
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+    color: #fff;
+
+    .content
+    {
+        height: 100vh;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    a
+    {
+        color: #fff;
+
+        &:hover
+        {
+            color: $primary-color;
+        }
+    }
+}
+
+.home-text
+{
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+    
+    text-align: center;
+
+    h1
+    {
+        font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+        font-size: 4rem;
+    }
+
+    p
+    {
+        margin-top: 20px;
+    }
+
+    .home-btn
+    {
+        text-transform: uppercase;
+        margin-top: 40px;
+    }
+
+    a
+    {
+        padding: 10px 15px;
+        border: 1px solid white;
+
+        &:hover
+        {
+            color: #fff !important;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.home-footer
+{
+    height: 80px;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .home-social-network
+    {
+        display: flex;
+
+        a:first-child
+        {
+            margin-right: 30px;
+        }
+    }
+
+    .home-localisation
+    {
+        display: flex;
+
+        i
+        {
+            color: $primary-color;
+            margin-right: 10px;
+        }
+    }
+}
