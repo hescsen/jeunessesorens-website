@@ -5,6 +5,14 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lato", "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 a {
@@ -65,13 +73,11 @@ a {
 
 /* HOME */
 #home {
-  width: 100vw;
   height: 100vh;
   background-image: url("../img/home.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Lato", "Times New Roman", Times, serif;
   color: #fff;
 }
 #home .content {
@@ -129,6 +135,26 @@ a {
 .home-footer .home-adress i {
   color: orange;
   margin-right: 10px;
+}
+
+/* PRESENTATION */
+#presentation {
+  padding: 100px 0;
+}
+#presentation h1 {
+  margin-bottom: 40px;
+}
+#presentation p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+#presentation .presentation-img {
+  text-align: center;
+}
+#presentation img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
