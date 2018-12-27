@@ -33,12 +33,24 @@ a {
 /* NAVBAR */
 .nav {
   height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 1300px) {
+  .nav {
+    padding: 0 50px;
+  }
 }
 .nav ul {
   display: flex;
@@ -51,6 +63,22 @@ a {
 .nav ul li {
   margin: 0 20px;
   list-style-type: none;
+}
+
+.nav-white {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 1s;
+}
+.nav-white a {
+  color: #222222 !important;
+}
+.nav-white a:hover {
+  color: orange !important;
+}
+@media only screen and (max-width: 850px) {
+  .nav-white {
+    display: none;
+  }
 }
 
 .nav-icon {
@@ -96,6 +124,8 @@ a {
 .home-text {
   font-family: "Lato", "Times New Roman", Times, serif;
   text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%);
 }
 .home-text h1 {
   font-family: "Playfair Display", "Times New Roman", Times, serif;
