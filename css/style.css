@@ -205,6 +205,7 @@ a {
 }
 .home-footer .home-adress {
   display: flex;
+  align-items: center;
 }
 .home-footer .home-adress i {
   color: orange;
@@ -234,6 +235,7 @@ a {
 /* INFORMATIONS */
 #informations {
   background-color: #f1f1f1;
+  padding: 100px 0;
 }
 #informations p {
   font-size: 1.5rem;
@@ -252,11 +254,8 @@ a {
     align-items: center;
   }
 }
-#informations .info {
-  margin: 150px 0;
-}
 @media only screen and (max-width: 850px) {
-  #informations .info {
+  #informations .informations-content {
     margin: 150px 0;
   }
 }
@@ -265,6 +264,101 @@ a {
 }
 #informations a:hover {
   color: orange;
+}
+
+/* CONTACT */
+#contact {
+  padding: 100px 0;
+}
+#contact p {
+  text-align: center;
+  margin: 20px;
+}
+#contact .contact-content {
+  display: flex;
+  align-items: center;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  max-width: 720px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#contact form input {
+  height: 25px;
+  padding-left: 10px;
+  margin: 10px 0;
+  border: 1px solid gray !important;
+}
+#contact form textarea {
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px 0 0 10px;
+  resize: vertical;
+  border: 1px solid gray !important;
+}
+#contact form .send-btn {
+  width: 100px;
+  margin: 10px 0;
+  padding: 15px 15px;
+  border: 1px solid gray !important;
+  text-transform: uppercase;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  color: gray;
+  cursor: pointer;
+  outline: 0;
+}
+#contact form .send-btn:hover {
+  border-color: orange !important;
+  color: orange;
+}
+#contact .contact-infos {
+  width: 40vw;
+  padding-left: 20px;
+}
+#contact .contact-infos .contact-info {
+  margin-bottom: 20px;
+}
+#contact .contact-infos .contact-info:last-child {
+  margin-bottom: 0px;
+}
+#contact .contact-infos h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#contact .contact-infos p {
+  text-align: left;
+  margin: 0;
+  font-size: 1rem;
+}
+#contact .contact-infos a {
+  color: #000;
+  font-size: 1rem;
+}
+#contact .contact-infos a:hover {
+  color: orange;
+}
+#contact .contact-social-network-content {
+  display: flex;
+}
+#contact .contact-social-network-content .contact-social-network {
+  height: 25px;
+  width: 25px;
+  background-color: orange;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact-social-network-content .contact-social-network a {
+  color: #fff;
+}
+#contact .contact-social-network-content .contact-social-network a:hover {
+  color: #000;
 }
 
 /* FOOTER */

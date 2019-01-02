@@ -14,7 +14,7 @@
 <body>
 
     <!-- HOME -->
-    <div id="home">
+    <section id="home">
         <div class="content">
             
             
@@ -64,15 +64,15 @@
                 </div>
                 <div class="home-adress">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>1642, Sorens</p>
+                    <a target="_blank" href="https://www.google.com/maps/place/1642+Sorens/@46.6731231,7.0274754,14z/data=!3m1!4b1!4m5!3m4!1s0x478e63447a8f81f7:0x403ca96c8a8c95b2!8m2!3d46.6691888!4d7.0586245">1642, Sorens</a>
                 </div>
             </div>
 
         </div>
-    </div>
+    </section>
 
     <!-- PRESENTATION -->
-    <div id="presentation">
+    <section id="presentation">
         <div class="content">
             <h1>Présentation</h1>
             <p>
@@ -87,12 +87,12 @@
                 <img src="img/jeunesse_sorens.jpeg" alt="jeunesse-sorens">
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- INFORMATIONS -->
-    <div id="informations">
+    <section id="informations">
         <div class="content">
-            <div class="info">
+            <div class="informations-content">
                 <a href="#">
                     <img src="img/informations/naissance.png" alt="naissance">
                     <p>Naissance</p>
@@ -111,7 +111,54 @@
                 </a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+        <div class="content">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum.</p>
+            <div class="contact-content">
+                <form method="POST" action="send.php">
+                    <input type="text" name="nom" id="nom" placeholder="Nom complet">
+                    <input type="email" name="email" id="email" placeholder="Adresse email">
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <button class="send-btn" type="submit">Envoyer</button>
+                </form>
+                <div class="contact-infos">
+                    <div class="contact-info">
+                        <h2>Adresse email</h2>
+                        <a href="mailto:info@jeunessesorens.ch">info@jeunessesorens.ch</a>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Téléphone</h2>
+                        <a href="tel:+41764279601">+41 76 427 96 01</a>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Adresse postale</h2>
+                        <p>
+                            Nicolet Sylvain<br>
+                            Plan des Marais 17<br>
+                            1642<br>
+                            Sorens
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Réseaux sociaux</h2>
+                        <div class="contact-social-network-content">
+                            <div class="contact-social-network">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="contact-social-network">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
