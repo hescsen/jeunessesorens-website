@@ -234,8 +234,13 @@ a {
 
 /* INFORMATIONS */
 #informations {
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
   padding: 100px 0;
+}
+@media only screen and (max-width: 850px) {
+  #informations {
+    padding: 0;
+  }
 }
 #informations p {
   font-size: 1.5rem;
@@ -256,7 +261,7 @@ a {
 }
 @media only screen and (max-width: 850px) {
   #informations .informations-content {
-    margin: 150px 0;
+    margin: 100px 0;
   }
 }
 #informations a {
@@ -266,13 +271,121 @@ a {
   color: orange;
 }
 
+/* EVENTS */
+.events-title {
+  margin: 50px 0;
+}
+
+#main-event {
+  height: 400px;
+  background-image: url("../img/event.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+#main-event .main-event-to-come {
+  width: 50vw;
+  padding-left: 20px;
+}
+#main-event .main-event-to-come .main-event-to-come-date p {
+  color: orange;
+  font-size: 1rem;
+}
+#main-event .main-event-to-come .main-event-to-come-description {
+  margin: 20px 0 30px 0;
+}
+#main-event .main-event-to-come .main-event-to-come-description h1 {
+  text-align: left;
+}
+#main-event .main-event-to-come button {
+  width: 150px;
+  padding: 15px 15px;
+  border: 1px solid orange !important;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  outline: 0;
+}
+#main-event .main-event-to-come button:hover {
+  border-color: orange !important;
+  color: orange;
+}
+@media only screen and (max-width: 850px) {
+  #main-event .main-event-to-come {
+    width: 100%;
+    text-align: center;
+  }
+  #main-event .main-event-to-come h1 {
+    text-align: center !important;
+  }
+}
+
+.events-to-come-row {
+  padding: 40px 0;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.events-to-come-row:last-child {
+  border-bottom: none;
+}
+.events-to-come-row .events-to-come-date {
+  text-align: center;
+  margin: 0 20px;
+}
+.events-to-come-row .events-to-come-date span {
+  font-size: 2.2rem;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+.events-to-come-row .events-to-come-date p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+.events-to-come-row .events-to-come-description {
+  margin: 0 20px;
+}
+.events-to-come-row button {
+  width: 150px;
+  margin: 0 20px;
+  padding: 15px 15px;
+  border: 1px solid orange !important;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  outline: 0;
+}
+.events-to-come-row button:hover {
+  border-color: orange !important;
+  color: orange;
+}
+@media only screen and (max-width: 850px) {
+  .events-to-come-row {
+    flex-direction: column;
+  }
+  .events-to-come-row button {
+    margin-top: 20px;
+  }
+}
+
 /* CONTACT */
 #contact {
   padding: 100px 0;
+  background-color: #f5f5f5;
 }
 #contact p {
   text-align: center;
-  margin: 20px;
+  margin: 40px 0 20px 0;
 }
 #contact .contact-content {
   display: flex;
